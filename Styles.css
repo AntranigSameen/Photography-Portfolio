@@ -1,0 +1,130 @@
+body {
+    background-color: rgb(17, 17, 17);
+    color: white;
+    font-family:monospace;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    overflow: hidden;
+    background-color: black;
+    background-image: url(Images/Dragonfly.JPEG);
+    background-position: center;
+    background-size: 100%;
+    padding: 20%;
+ }
+
+header a {
+    font-size: 12px;
+    text-transform: uppercase;
+    float: right;
+    border-radius: 4px;
+    line-height: 20px;
+    padding: 10px;
+}
+
+header .logo a {
+    background-image: url("Images/Autograph.PNG");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    image-rendering: crisp-edges;
+    top: 50px;
+    left: 80px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+
+}
+
+a {
+    text-decoration: none;
+    text-decoration-color: none;
+}
+
+.header-right a:hover {
+    text-decoration: none;
+    background-color: #ddd;
+    color: black;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+.header-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+  }
+
+/*RESPONSIVE RULES HEADER ELEMENTS*/
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .header-right {
+        float: none;
+    }
+  }
+
+/*RESPONSIVE RULES LOGO*/
+@media screen and (max-width: 1200px) {
+    header .logo a{
+        width: 80%;
+        height: 80%;
+        top: 3%;
+        left: 4%;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    header .logo a{
+        background-size: 100%;
+        width: 45px;
+        height: 45px;
+        top: 2%;
+        left: 4%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header .logo a{
+        background-size: 80%;
+        width: 45px;
+        height: 45px;
+        top: 1%;
+        left: 4%;
+    }
+}
+
+/**************************/
+
+.photo-class {
+    margin-left: -3%;
+    color: white;
+    font-size: medium;
+    padding: 5%;
+    display:flex;
+    flex-direction: row;
+    
+}
+
+
+
+footer{
+   
+    padding: 10%;
+
+}

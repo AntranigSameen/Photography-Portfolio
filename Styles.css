@@ -116,29 +116,26 @@ header nav ul {
 
 /**************************/
 
-.gallery-aside {
-    width: 10%;
+.gallery-text {
+    overflow: visible;
+    margin: 0;
     float: left;
-    padding: 10px;
-    text-align: center;
-    background-color: black;
 }
 
 .gallery div {
+    position: static;
     display: inline-block;
-    margin-top: 5%;
+    width: 99%%;
+    background-size: 100%;
     background-color: red;
 }
 .people-landscape {
     width: 60%;
     float: left;
-    padding: 10px;
 }
 
 .people-portrait {
     width: 30%;
-    float: left;
-    padding: 10px;
 }
 
 

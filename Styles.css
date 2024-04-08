@@ -17,7 +17,7 @@ header {
  }
 
 header a {
-    font-size: 18px;
+    font-size: 12px;
     text-transform: uppercase;
     float: right;
     border-radius: 4px;
@@ -26,7 +26,6 @@ header a {
 }
 
 header .logo a {
-    background-color: red;
     background-image: url("Images/Autograph.PNG");
     background-size: 100px;
     background-repeat: no-repeat;
@@ -43,13 +42,13 @@ header .logo a {
 a {
     text-decoration: none;
     text-decoration-color: none;
-    color: rgb(255, 255, 255);
+    color: rgb(14, 13, 13);
 }
 
 .header-right a:hover {
     text-decoration: none;
-    background-color: #e2e2e22a;
-    color: rgb(0, 0, 0);
+    background-color: #ddd;
+    color: black;
 }
 
 a:active {

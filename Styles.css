@@ -26,16 +26,16 @@ header a {
 }
 
 header .logo a {
-    display: inline-block;
     background-image: url("Images/Autograph.PNG");
     background-size: 100px;
     background-repeat: no-repeat;
+    display: inline-block;
     image-rendering: crisp-edges;
-    margin-top: -400px;
-    margin-right: 1600px;
-    width: 80px;
-    height: 80px;
-    position: static;
+    top: 50px;
+    left: 80px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
 
 }
 
@@ -83,8 +83,8 @@ header nav ul {
 /*RESPONSIVE RULES LOGO*/
 @media screen and (max-width: 1200px) {
     header .logo a{
-        width: 8%;
-        height: 8%;
+        width: 80%;
+        height: 80%;
         top: 3%;
         left: 4%;
     }

@@ -39,16 +39,17 @@ header .logo a {
 
 }
 
-a {
+.header-right a{
     text-decoration: none;
     text-decoration-color: none;
     color: rgb(14, 13, 13);
+    
 }
 
 .header-right a:hover {
     text-decoration: none;
-    background-color: #ddd;
-    color: black;
+    background-color: hsla(195, 4%, 80%, 0.24);
+    color: rgb(255, 255, 255);
 }
 
 a:active {

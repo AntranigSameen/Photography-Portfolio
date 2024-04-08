@@ -4,7 +4,10 @@ body {
     font-family:monospace;
     margin: 0;
     padding: 0;
+}
 
+*:not(header) {
+    box-sizing: border-box;
 }
 
 header {
@@ -113,7 +116,26 @@ header nav ul {
 
 /**************************/
 
-.photo-class {
+aside {
+    width: 10%;
+    float: left;
+    padding: 10px;
+}
+.people-landscape {
+    width: 60%;
+    float: left;
+    padding: 10px;
+}
+
+.people-portrait {
+    width: 30%;
+    float: left;
+    padding: 10px;
+}
+
+
+/*
+.people-landscape {
     margin-left: -3%;
     color: white;
     font-size: medium;
@@ -123,7 +145,7 @@ header nav ul {
     
 }
 
-
+*/
 
 footer{
    

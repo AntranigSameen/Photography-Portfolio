@@ -115,27 +115,40 @@ header nav ul {
 }
 
 /**************************/
-
-.gallery-text {
-    overflow: visible;
-    margin: 0;
-    float: left;
+.gallery {
+    display: flex;
+    background-color: black;
 }
 
-.gallery div {
-    position: static;
-    display: inline-block;
-    width: 99%%;
-    background-size: 100%;
-    background-color: red;
+.text-container {
+    margin-left: 5%;
+    margin-top: 5%;
 }
+
 .people-landscape {
-    width: 60%;
-    float: left;
+    display: flex;
+    flex: 6;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
 }
 
 .people-portrait {
-    width: 30%;
+    display: flex;
+    flex: 6;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 10% 10% 0;
+
+}
+
+.gallery-text {
+    margin: 0; /* remove default margin */
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
 }
 
 

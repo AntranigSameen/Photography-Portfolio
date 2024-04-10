@@ -5,6 +5,7 @@
 
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <title>Antranig Sameen</title>
@@ -29,51 +30,34 @@
 
 
         <!--Main Photos-->
-        <main>
-            <div class="gallery">
-                
-                <div class="people-landscape" id="p-land">
-                    <img src="Images/Prom-22.jpg" alt="Couple Prom" width="100%">
-                </div>
+        <div class="slideshow-container">
 
-                <div class="people-portrait" id="p-port">
-                    <img src="Images/Ate.jpg" alt="portrait sun shine" width="90%">
-                </div>
-
+            <div class="mySlides fade">
+                <img src="Images/Prom-22.jpg" alt="" style="width: 60%">
+            </div>
+            <div class="mySlides fade">
+                <img src="Images/GoldenGate.jpg" alt="" style="width: 60%">
+            </div>
+            <div class="mySlides fade">
+                <img src="Images/TheBay.jpg" alt="" style="width: 60%">
             </div>
 
-            <div class="gallery">
-                
-                <div class="people-landscape" id="p-land">
-                    <img src="Images/TheBay.jpg" alt="Couple Prom" width="100%">
-                </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-                <div class="people-portrait" id="p-port">
-                    <img src="Images/Tina.jpg" alt="portrait sun shine" width="90%">
-                </div>
+        </div>
+        <br>
 
-            </div>
-
-            <div class="gallery">
-                
-                <div class="people-landscape" id="p-land">
-                    <img src="Images/GoldenGate.jpg" alt="Couple Prom" width="100%">
-                </div>
-
-                <div class="people-portrait" id="p-port">
-                    <img src="Images/Veil.JPEG" alt="portrait sun shine" width="90%">
-                </div>
-
-            </div>
-
-        </main>
-
-
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlides(1)"></span>
+            <span class="dot" onclick="currentSlides(2)"></span>
+            <span class="dot" onclick="currentSlides(3)"></span>
+        </div>
 
 
 
         <footer>Footer</footer>
         
-
+        <script src="main.js"></script>
     </body>
 </html>

@@ -55,4 +55,3 @@ function showPortraitSlides(n){
     portraitSlides[portraitSlideIndex - 1].style.display = "block";
     dots[portraitSlideIndex - 1].className += " active"; 
 }
-

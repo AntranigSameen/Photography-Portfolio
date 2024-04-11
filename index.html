@@ -42,6 +42,9 @@
             <div class="mySlides fade">
                 <img src="Images/TheBay.jpg" alt="" style="width: 100%">
             </div>
+            <div class="mySlides fade">
+                <img src="Images/GoldenGateNight.jpg" alt="" style="width: 100%">
+            </div>
 
 
             <!--Portrait Images-->
@@ -54,27 +57,33 @@
             <div class="mySlidesPort fade">
                 <img src="Images/Prom-44.jpg" alt="" style="width: 100%">
             </div>
+            <div class="mySlidesPort fade">
+                <img src="Images/Ate3.jpg" alt="" style="width: 100%">
+            </div>
 
-
+            <!--NAV ARROWS LANDSCAPE-->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            <a class="prevPort" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="nextPort" onclick="plusSlides(1)">&#10095;</a>
+            <!--NAV ARROWS PORTRAIT-->
+            <a class="prevPort" onclick="plusSlides(-1, true)">&#10094;</a>
+            <a class="nextPort" onclick="plusSlides(1, true)">&#10095;</a>
 
         </div>
         <br>
 
+        <!--DOTS FOR PICTURES (ADD MORE WHEN ADDING PICTURES)-->
         <div style="text-align: center;">
             <span class="dot" onclick="currentSlides(1)"></span>
             <span class="dot" onclick="currentSlides(2)"></span>
             <span class="dot" onclick="currentSlides(3)"></span>
+            <span class="dot" onclick="currentSlides(4)"></span>
         </div>
 
         <div style="text-align: center;">
             <span class="dotPort" onclick="currentSlides(1)"></span>
             <span class="dotPort" onclick="currentSlides(2)"></span>
             <span class="dotPort" onclick="currentSlides(3)"></span>
+            <span class="dotPort" onclick="currentSlides(4)"></span>
         </div>
 
 

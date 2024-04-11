@@ -17,14 +17,11 @@ function plusSlides(n, isPortrait){
     }
 }
 
-function currentSlide(n){
-    showSlides(slideIndex = n);
-}
-
 function currentSlides(n, isPortrait){
     if (isPortrait) {
         showPortraitSlides(portraitSlideIndex = n);
-    } else {
+    }
+    else{
         showSlides(slideIndex = n);
     }
 }

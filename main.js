@@ -1,4 +1,9 @@
-
+document.addEventListener('DOMContentLoaded', function () {
+    showPortraitSlides(1); // Display the first portrait slide initially
+});
+document.addEventListener('DOMContentLoaded', function () {
+    showSlides(1); // Display the first landscape slide initially
+});
 
 var slideIndex = 1;
 var portraitSlideIndex = 1; // New index for portrait slides

@@ -164,7 +164,8 @@ img{
 
 /** IMAGE NAVIGATION SECTION **/
 
-.prev, .next{
+/**ARROWS**/
+.prev, .next, .prevNature, .nextNature{
     cursor: pointer;
     position: absolute;
     width: auto;
@@ -178,7 +179,7 @@ img{
     user-select: none;
 }
 
-.prevPort, .nextPort{
+.prevPort, .nextPort, .prevPortNature, .nextPortNature{
     cursor: pointer;
     position: absolute;
     width: auto;
@@ -192,32 +193,34 @@ img{
     user-select: none;
 }
 
-.next{
+.next, .nextNature{
     right: 40%;
     border-radius: 3px 0 0 3px;
 }
 
-.nextPort{
+.nextPort, .nextPortNature{
     right: 3.5%;
     border-radius: 3px 0 0 3px;
     transition: 0.5s ease;
 }
 
 
-.prev:hover, .next:hover, .prevPort:hover, .nextPort:hover{
+
+.prev:hover, .next:hover, .prevPort:hover, .nextPort:hover, .prevPortNature:hover, .nextPortNature:hover, .prevNature:hover, .nextNature:hover{
     color: grey;
 }
 
-.landDotsDiv{
+/** DOTS **/
+.landDotsDiv, .landDotsDivNature{
     position: relative;
 }
 
-.portDotsDiv{
+.portDotsDiv, .portDotsDivNature{
     position: relative;
     margin-top: 1%;
 }
 
-.dot{
+.dot, .dotNature{
     position: relative;
     align-items: center;
     left: -16%;
@@ -230,7 +233,7 @@ img{
     transition: background-color 0.6s ease;
 }
 
-.dotPort{
+.dotPort, .dotPortNature{
     position: relative;
     transform: translateY(-20px);
     left: 34.5%;
@@ -244,7 +247,7 @@ img{
 }
 
 
-.active, .dot:hover, .dotPort:hover{
+.active, .dot:hover, .dotPort:hover, .active, .dotNature:hover, .dotPortNature:hover{
     background-color: grey;
 }
 

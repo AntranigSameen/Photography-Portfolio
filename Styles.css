@@ -116,9 +116,9 @@ header nav ul {
 }
 
 /************GALLERY SECTION**************/
+/** People Section **/
 
 .mySlides, .mySlidesPort{
-
     position: absolute;
     width: 60%;
 }
@@ -137,7 +137,25 @@ img{
     border-radius: 10%;
 }
 
-.slideshow-container{
+.slideshow-container-people{
+    max-width: 100%;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+/** Nature Section **/
+.mySlidesNature, .mySlidesPortNature{
+    position: absolute;
+    width: 60%;
+}
+
+.mySlidesPortNature{
+    width: 26.5%;
+    left: 70%;
+}
+
+.slideshow-container-nature{
     max-width: 100%;
     position: relative;
     margin-top: 5%;

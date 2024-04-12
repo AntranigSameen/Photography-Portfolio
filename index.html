@@ -92,8 +92,7 @@
 
         <!-- NATURE PICTURES SECTION -->
             <div class="slideshow-container-nature">
-                <!-- Nature set of images content -->
-                <!--Landscape Images-->
+                <!--Landscape Images Nature-->
                 <div class="mySlidesNature fade">
                     <img src="Images/Prom-22.jpg" alt="" style="width: 100%">
                 </div>
@@ -108,7 +107,7 @@
                 </div>
 
 
-                <!--Portrait Images PEOPLE-->
+                <!--Portrait Images Nature-->
                 <div class="mySlidesPortNature fade">
                     <img src="Images/Ate.jpg" alt="" style="width: 100%">
                 </div>
@@ -147,8 +146,65 @@
                 <span class="dotPortNature" onclick="currentNatureSlides(4, true)"></span>
             </div>
 
+        <!-- Add spacing or elements here to create separation -->
+        <div style="height: 20px; margin-top: 40%;"></div>
+
+        <!-- RANDOM set of images content -->
+        <div class="slideshow-container-random">
+            
+            <!--Landscape Images RANDOM-->
+            <div class="mySlidesRandom fade">
+                <img src="Images/Prom-22.jpg" alt="" style="width: 100%">
+            </div>
+            <div class="mySlidesRandom fade">
+                <img src="Images/GoldenGate.jpg" alt="" style="width: 100%">
+            </div>
+            <div class="mySlidesRandom fade">
+                <img src="Images/TheBay.jpg" alt="" style="width: 100%">
+            </div>
+            <div class="mySlidesRandom fade">
+                <img src="Images/Ate2.jpg" alt="" style="width: 100%">
+            </div>
+
+
+            <!--Portrait Images RANDOM-->
+            <div class="mySlidesPortRandom fade">
+                <img src="Images/Ate.jpg" alt="" style="width: 100%">
+            </div>
+            <div class="mySlidesPortRandom fade">
+                <img src="Images/Ate3.jpg" alt="" style="width: 100%">
+            </div>
+            <div class="mySlidesPortRandom fade">
+                <img src="Images/Tina.jpg" alt="" style="width: 100%">
+            </div>
+            <div class="mySlidesPortRandom fade">
+                <img src="Images/Prom-44.jpg" alt="" style="width: 100%">
+            </div>
+
+            <!-- NAV ARROWS LANDSCAPE RANDOM -->
+            <a class="prevRandom" onclick="plusRandomSlides(-1)">&#10094;</a>
+            <a class="nextRandom" onclick="plusRandomSlides(1)">&#10095;</a>
+            <!-- NAV ARROWS PORTRAIT RANDOM -->
+            <a class="prevPortNature" onclick="plusRandomSlides(-1, true)">&#10094;</a>
+            <a class="nextPortNature" onclick="plusRandomSlides(1, true)">&#10095;</a>
+
+        </div>
         <br>
 
+        <!--DOTS FOR RANDOM PICTURES (ADD MORE WHEN ADDING PICTURES)-->
+        <div class="landDotsDivRandom" style="text-align: center;">
+            <span class="dotRandom" onclick="currentRandomSlides(1)"></span>
+            <span class="dotRandom" onclick="currentRandomSlides(2)"></span>
+            <span class="dotRandom" onclick="currentRandomSlides(3)"></span>
+            <span class="dotRandom" onclick="currentRandomSlides(4)"></span>
+        </div>
+
+        <div class="portDotsDivRandom" style="text-align: center;">
+            <span class="dotPortRandom" onclick="currentRandomSlides(1, true)"></span>
+            <span class="dotPortRandom" onclick="currentRandomSlides(2, true)"></span>
+            <span class="dotPortRandom" onclick="currentRandomSlides(3, true)"></span>
+            <span class="dotPortRandom" onclick="currentRandomSlides(4, true)"></span>
+        </div>
 
         <footer>Footer</footer>
         

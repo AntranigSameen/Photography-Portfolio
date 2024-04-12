@@ -70,6 +70,9 @@ header nav ul {
     float: right;
   }
 
+
+
+
 /*RESPONSIVE RULES HEADER ELEMENTS*/
   @media screen and (max-width: 500px) {
     .header a {
@@ -114,6 +117,87 @@ header nav ul {
         left: 4%;
     }
 }
+
+/** Contact ICONS **/
+.contactIcons {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* To horizontally center items */
+    align-items: center; /* To vertically center items */
+}
+
+.contactIcons > * {
+    flex: 0 0 auto; /* Prevent icons from growing or shrinking */
+}
+
+.fa-solid.fa-envelope.fa-5x, .fa-brands.fa-instagram.fa-5x, .fa-brands.fa-discord.fa-5x {
+    margin-right: 0;
+    transition: transform 0.3s ease;
+}
+
+.fa-solid.fa-envelope.fa-5x:hover {
+    transform: translateX(-40%);
+}
+
+.fa-brands.fa-instagram.fa-5x:hover {
+    transform: translateX(-40%);
+}
+
+.fa-brands.fa-discord.fa-5x:hover {
+    margin-left: -3%;
+    transform: translateX(-40%);
+}
+
+.contactEmail, .contactInstagram, .contactDiscord{
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.contactIcons .fa-solid.fa-envelope.fa-5x:hover + .contactEmail {
+    transform: translateX(-45%);
+    opacity: 1;
+}
+
+.contactIcons .fa-brands.fa-instagram.fa-5x:hover + .contactInstagram {
+    transform: translateX(-40%);
+    opacity: 1;
+}
+
+.contactIcons .fa-brands.fa-discord.fa-5x:hover + .contactDiscord {
+    transform: translateX(-40%);
+    opacity: 1;
+}
+
+/**RESPONSIVE RULES FOR CONTACT ICONS**/
+@media screen and (max-width: 600px) {
+    .contactIcons {
+        flex-direction: column; /* Change flex direction to column */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .contactIcons > * {
+        margin-bottom: 10px; /* Add margin between icons and text */
+    }
+
+    .contactEmail, .contactInstagram, .contactDiscord {
+        opacity: 1; /* Make text visible by default */
+        transform: translateY(0); /* Reset text position */
+    }
+
+    .fa-solid.fa-envelope.fa-5x:hover, .fa-brands.fa-instagram.fa-5x:hover, .fa-brands.fa-discord.fa-5x:hover {
+        transform: translateY(-20px); /* Adjust icon position on hover */
+    }
+
+    .contactEmail, .contactInstagram, .contactDiscord {
+        transition: transform 0.3s ease; /* Change transition to slide up */
+    }
+}
+
+
+
 
 /************GALLERY SECTION**************/
 /** Home Images Section **/

@@ -176,6 +176,26 @@ header nav ul {
     }
 }
 
+/** FOOTER ICONS **/
+@keyframes changeColorTwitter {
+    to {
+        color: hsl(180, 2%, 20%); /* Final color for twitter icon */
+    }
+}
+
+.iconContainer:hover .fa-x-twitter {
+    animation: changeColorTwitter 0.3s ease forwards; /* Apply color change animation on hover */
+}
+
+@keyframes changeColorYoutube {
+    to {
+        color: hsl(0, 100%, 56%); /* Final color for twitter icon */
+    }
+}
+
+.iconContainer:hover .fa-youtube {
+    animation: changeColorYoutube 0.3s ease forwards; /* Apply color change animation on hover */
+}
 
 
 /**RESPONSIVE RULES FOR CONTACT ICONS**/
@@ -428,5 +448,12 @@ img{
 
 
 footer{
-margin-top: 30%;
+    text-align: center;
+    padding: 10%;
+    margin-top: 30%;
+}
+
+.footerFollow{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 200%;
 }

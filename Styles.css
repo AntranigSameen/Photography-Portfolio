@@ -120,81 +120,104 @@ header nav ul {
 
 /** Contact ICONS **/
 .contactIcons {
-    width: 100%;
-    text-align: center;
     display: flex;
-    justify-content: center; /* To horizontally center items */
-    align-items: center; /* To vertically center items */
+    justify-content: center; /* Center icons horizontally */
 }
 
-.contactIcons > * {
-    flex: 0 0 auto; /* Prevent icons from growing or shrinking */
-}
-
-.fa-solid.fa-envelope.fa-5x, .fa-brands.fa-instagram.fa-5x, .fa-brands.fa-discord.fa-5x {
-    margin-right: 0;
-    transition: transform 0.3s ease;
-}
-
-.fa-solid.fa-envelope.fa-5x:hover {
-    transform: translateX(-40%);
-}
-
-.fa-brands.fa-instagram.fa-5x:hover {
-    transform: translateX(-40%);
-}
-
-.fa-brands.fa-discord.fa-5x:hover {
-    margin-left: -3%;
-    transform: translateX(-40%);
-}
-
-.contactEmail, .contactInstagram, .contactDiscord{
+.iconContainer {
     position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px; /* Add margin between icons */
+}
+
+.contactText {
+    position: absolute;
+    bottom: -20px; /* Hide text initially */
+    left: 50%; /* Center text horizontally */
+    transform: translateX(-50%);
     opacity: 0;
-    transition: opacity 0.3s ease;
-    transition: transform 0.3s ease;
+    transition: opacity 0.3s ease, bottom 0.3s ease; /* Transition for opacity and bottom */
 }
 
-.contactIcons .fa-solid.fa-envelope.fa-5x:hover + .contactEmail {
-    transform: translateX(-45%);
+.iconContainer:hover .contactText {
+    bottom: 40px; /* Slide text up on hover */
     opacity: 1;
 }
 
-.contactIcons .fa-brands.fa-instagram.fa-5x:hover + .contactInstagram {
-    transform: translateX(-40%);
-    opacity: 1;
+.iconContainer:hover i {
+    animation: changeColorEnvelope 0.3s ease forwards; /* Apply color change animation on hover */
 }
 
-.contactIcons .fa-brands.fa-discord.fa-5x:hover + .contactDiscord {
-    transform: translateX(-40%);
-    opacity: 1;
+@keyframes changeColorEnvelope {
+    to {
+        color: hsl(36, 89%, 48%); /* Final color for envelope icon */
+    }
 }
+
+.iconContainer:hover .fa-instagram {
+    animation: changeColorInstagram 0.3s ease forwards; /* Apply color change animation on hover */
+}
+
+@keyframes changeColorInstagram {
+    to {
+        color: hsl(0, 81%, 51%); /* Final color for instagram icon */
+    }
+}
+
+.iconContainer:hover .fa-discord {
+    animation: changeColorDiscord 0.3s ease forwards; /* Apply color change animation on hover */
+}
+
+@keyframes changeColorDiscord {
+    to {
+        color: hsl(261, 87%, 47%); /* Final color for discord icon */
+    }
+}
+
+
 
 /**RESPONSIVE RULES FOR CONTACT ICONS**/
+
 @media screen and (max-width: 600px) {
     .contactIcons {
-        flex-direction: column; /* Change flex direction to column */
-        align-items: flex-start; /* Align items to the start */
+        flex-direction: column; /* Stack icons vertically */
+        align-items: center; /* Center icons vertically */
     }
 
-    .contactIcons > * {
-        margin-bottom: 10px; /* Add margin between icons and text */
+    .iconContainer {
+        margin: 2% 0; /* Add margin between icons */
     }
 
-    .contactEmail, .contactInstagram, .contactDiscord {
-        opacity: 1; /* Make text visible by default */
-        transform: translateY(0); /* Reset text position */
+    .contactText {
+        position: static; /* Reset position */
+        opacity: 0; /* Show text */
+        margin-left: 5%; /* Remove margin */
+        transition: none; /* Remove transition */
     }
 
-    .fa-solid.fa-envelope.fa-5x:hover, .fa-brands.fa-instagram.fa-5x:hover, .fa-brands.fa-discord.fa-5x:hover {
-        transform: translateY(-20px); /* Adjust icon position on hover */
+    .iconContainer:hover .contactText {
+        opacity: 1; /* Keep text visible on hover */
     }
 
-    .contactEmail, .contactInstagram, .contactDiscord {
-        transition: transform 0.3s ease; /* Change transition to slide up */
+    .iconContainer:hover i {
+        animation: none; /* Remove color change animation on mobile */
+    }
+
+    /* Add color change animation for email icon */
+    .iconContainer:hover .fa-envelope {
+        animation: changeColorEmail 0.3s ease forwards; /* Apply color change animation on hover */
+    }
+
+    @keyframes changeColorEmail {
+        to {
+            color: hsl(36, 89%, 48%); /* Final color for email icon */
+        }
     }
 }
+
+
+
 
 
 

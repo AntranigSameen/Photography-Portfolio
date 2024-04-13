@@ -1,7 +1,7 @@
 body {
     background-color: rgb(17, 17, 17);
     color: white;
-    font-family:monospace;
+    font-family:'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -21,7 +21,7 @@ header {
  }
 
 header a {
-    font-size: 18px;
+    font-size: 14px;
     text-transform: uppercase;
     float: right;
     border-radius: 10px;
@@ -172,7 +172,7 @@ header nav ul {
 
 @keyframes changeColorDiscord {
     to {
-        color: hsl(261, 87%, 47%); /* Final color for discord icon */
+        color: hsl(249, 87%, 47%); /* Final color for discord icon */
     }
 }
 
@@ -223,6 +223,21 @@ header nav ul {
 
     .iconContainer:hover i {
         animation: none; /* Remove color change animation on mobile */
+    }
+
+    footer .contactIcons {
+        display: flex;
+        flex-direction: row; /* Ensure icons are in a row */
+        justify-content: center; /* Center icons horizontally */
+        align-items: center; /* Center icons vertically */
+    }
+
+    footer .iconContainer {
+        margin: 0; /* Adjust margin for smaller screens */
+    }
+
+    footer .iconContainer i {
+        font-size: 1.2em; /* Adjust size of icons */
     }
 
     /* Add color change animation for email icon */
@@ -445,9 +460,19 @@ img{
     
 }
 
+.aboutSection{
+    font-family:'Courier New', Courier, monospace;
+    margin: 5%;
+}
+.aboutContent{
+    padding: 5%;
+    margin: 0;
+}
 
 
 footer{
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 83%);
     text-align: center;
     padding: 10%;
     margin-top: 30%;
@@ -456,4 +481,12 @@ footer{
 .footerFollow{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 200%;
+}
+
+/**RESPONSIVE RULES FOR FOOTER**/
+
+@media screen and (max-width: 600px) {
+    .footerFollow{
+        font-size: 150%;
+    }    
 }

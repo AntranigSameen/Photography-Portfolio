@@ -410,23 +410,30 @@ img{
     .dot, .dotPort, .dotNature, .dotPortNature, .dotRandom, .dotPortRandom{
         height: 8px;
         width: 8px;
+        margin: 4px;
     }
 
     .landDotsDiv, .landDotsDivNature, .landDotsDivRandom{
         position: relative;
         margin-top: -1%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
     .portDotsDiv, .portDotsDivNature, .portDotsDivRandom{
         position: relative;
         margin-top: 1%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
     .prev, .next, .nextPort, .prevPort, .prevNature, .nextNature, .prevPortNature, .nextPortNature, .prevRandom, .nextRandom, .prevPortRandom, .nextPortRandom{
         position: absolute;
@@ -443,6 +450,7 @@ img{
     .dot, .dotPort, .dotNature, .dotPortNature, .dotRandom, .dotPortRandom{
         height: 5px;
         width: 5px;
+        margin: 2px;
     }
     .dot, .dotNature, .dotRandom{
         margin-bottom: 0;
@@ -451,15 +459,23 @@ img{
     .landDotsDiv, .landDotsDivNature, .landDotsDivRandom{
         position: relative;
         margin-top: -3%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
     .portDotsDiv, .portDotsDivNature, .portDotsDivRandom{
         position: relative;
         margin-top: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
 }
 
+
+/** About SECTION **/
 .aboutSection{
     font-family:'Courier New', Courier, monospace;
     margin: 5%;

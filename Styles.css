@@ -14,7 +14,7 @@ body {
 header {
     overflow: hidden;
     background-color: black;
-    background-image: url(Images/Dragonfly1.JPEG);
+    background-image: url(Images/Cityscape.JPEG);
     background-position: center;
     background-size: 100%;
     padding: 20%;
@@ -491,7 +491,7 @@ footer{
     color: hsl(0, 0%, 83%);
     text-align: center;
     padding: 10%;
-    margin-top: 30%;
+    margin-top: 35%;
 }
 
 .footerFollow{
